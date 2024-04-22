@@ -48,7 +48,7 @@ const routes: Routes = [
 {path:'admin',component:AdminLayoutComponent,children:[
 {path:'',loadChildren:()=>import('./views/admin/administrateur/administrateur.module').then(m=>m.AdministrateurModule)},
 {path:'administrateur', loadChildren: ()=>import('./views/admin/administrateur/administrateur.module').then(m=>m.AdministrateurModule)},
-{path:'addstudent',loadChildren:()=>import('./views/admin/addstudent/addstudent.module').then(m=>m.AddstudentModule)},
+{path:'ajouter',loadChildren:()=>import('./views/admin/ajouter/ajouter.module').then(m=>m.AjouterModule)},
 {path:'listesencadrants',loadChildren:()=>import('./views/admin/listesencadrants/listesencadrants.module').then(m=>m.ListesencadrantsModule)},
 {path:'stagesexpires', loadChildren: ()=>import('./views/admin/stagesexpires/stagesexpires.module').then(m=>m.StagesexpiresModule)},
 {path:'calendrier',loadChildren:()=>import('./views/admin/calendrier/calendrier.module').then(m=>m.CalendrierModule)},
