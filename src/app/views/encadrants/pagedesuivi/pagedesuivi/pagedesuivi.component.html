@@ -1,0 +1,78 @@
+<div class="container-fluid">
+
+    
+                
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">les sujet </h6>
+        </div>
+        <div class="card-body">
+            
+
+
+
+    <table>
+      <thead>
+        <tr>
+          <th>tache</th>
+          <th>Description</th>
+          <th>Technologies</th>
+          <th>stagiaire</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+   
+      <tbody>
+        <tr *ngFor="let item ">
+          <td>{{item.Titre}}Application mobile customisable à distance</td>
+          
+          <td>{{item.Description}}Développement d'une application Web avec un SDK Mobile qui permet de paramétrer l'affichage d'une application Mobile. Modification du thème (Couleurs, Fonts, Texte), Modification des ressources (icones, images...), Activer et désactiver des parties de l'application</td>
+          <td>{{item.technologique}}NodeJS, React ou Angular, MongoDB, Docker, Git, SCRUM</td>
+          <td><a   class="btn btn-primary" href=""> postuler</a></td>
+        </tr>
+        <tr *ngFor="let item ">
+          <td>{{item.Titre}}Développement d'une application de gestion RH</td>
+         
+          <td>{{item.Description}}Développement d'une plateforme multiservices de gestion RH. Gestion du personnel, Gestion de camère, Calendrier de l'entreprise, Suivi de recrutement. Cette plateforme devra offrir la possibilité d'accès Web et Mobile</td>
+          <td>{{item.technologique}}Swift, Core data, RX Swift, push notifications, MVVM, Kotlin, Retrofit, FCM, NodeJS, MongoDB, ReactJS, SCRUM</td>
+          <td><a href=""  class="btn btn-primary"> postuler</a></td>
+        </tr>
+        <tr *ngFor="let item ">
+          <td>{{item.Titre}}L'SEO par la pratique</td>
+        
+          <td>Mise en place d'une stratégie de communication sur les réseaux sociaux, Elaboration d'un plan de communication pour une marque, Audit et élaboration d'une stratégie SEO, Optimisation SEO, Ranking, Netlinking, Reporting et suivi</td>
+          <td>{{item.technologique}}Outils SEO, SCRUM</td>
+          <td><a href=""  class="btn btn-primary"> postuler</a></td>
+        </tr>
+        <tr *ngFor="let item ">
+          <td>{{item.Titre}}Plateforme de partage de connaissances</td>
+          
+          <td>{{item.Description}}Moblech est une plateforme de blogging qui permet à tous les membres de l'équipe de partager et d'enrichir leurs connaissances techniques et faire de la veille technologique. Potager de code, Snippets, Partage de tutos, des infographics, des vidéos, des articles... Voter et réagir sur les différents posts, Interfacer avec les outils de travail</td>
+          <td>{{item.technologique}}NodeJS, React ou Angular, MongoDB, Docker, Git, SCRUM</td>
+          <td><a href=""  class="btn btn-primary"> postuler</a></td>
+        </tr>
+        <tr *ngFor="let item ">
+          <td>{{item.Titre}}Suivi des stagiaires chez Mobelite</td>
+          
+          <td>{{item.Description}}Développement d'une application web/mobile dédiée à la gestion, suivi et évaluation des stagiaires chez Mobelite. Affectation des tâches, le suivi des stages et de financement des projets, gérer les meetings et les demos des projets, évaluation des projets</td>
+          <td>{{item.technologique}}ReactJS, NodeJS, MySQL, SCRUM</td>
+          <td><a href="" class="btn btn-primary"> postuler</a></td>
+        </tr>
+        <tr *ngFor="let item ">
+          <td>{{item.Titre}}Plugin pour Jira</td>
+          
+          <td>{{item.Description}}Développement d'un plugin que s'intègre sur Jira pour générer des rapports</td>
+          <td>{{item.technologique}}...</td>
+          <td><a href=""  class="btn btn-primary"> postuler</a></td>
+        </tr>
+        
+  
+      </tbody>
+    </table>
+
+           
+        </div>
+    </div>
+
+</div>

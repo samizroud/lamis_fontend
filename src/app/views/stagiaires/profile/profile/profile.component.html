@@ -1,0 +1,135 @@
+<div style="text-align:center">
+  votre stage chez nous
+  <p>vous pouvez maintenant remplir ce formulaire .</p>
+</div>
+<title>Formulaire de candidature</title>
+<div class="container">
+  <h1>Formulaire de candidature</h1>
+  <p>Veuillez remplir ce cv pour postuler à un stage.</p>
+  <hr>
+  <form [formGroup]="profileForm">
+    <div class="section section-informations-personnelles">
+      <h2>Informations personnelles</h2>
+      <label for="nom">FullName:</label>
+      <input formControlName="fullName" type="text" id="nom" name="nom" placeholder=" Your fullName">
+      <label for="pays">Nationality:</label>
+      <input formControlName="nationality" type="text" id="pays" name="pays" placeholder=" Your Nationality ">
+      <label for="date">Date of Birth:</label>
+      <input formControlName="dateOfBirth" type="date" id="date" name="date" placeholder=" Your date of birth">
+      <label for="adresse">Adresse:</label>
+      <input formControlName="address" type="text" id="adresse" name="adresse" placeholder="Your adresse">
+      <label for="dep">Departement:</label>
+      <input formControlName="department" type="text" id="dep" name="dep" placeholder="Your Departement">
+      <label for="dep">Gender:</label>
+      <input formControlName="gender" type="radio" id="contactChoice2" name="gender" value="male" />
+      <label for="contactChoice2">Male</label>
+      <input formControlName="gender" type="radio" id="contactChoice3" name="gender" value="femmale" />
+      <label for="contactChoice3">Femmale</label>
+    </div>
+    <div class="section section-contact">
+      <h2>Contact</h2>
+      <label for="email">Email:</label>
+      <input formControlName="email" type="email" id="email" name="email" placeholder="Your email">
+      <label for="telephone">Phone:</label>
+      <input formControlName="phone" type="tel" id="telephone" name="telephone" placeholder="Your number">
+    </div>
+  </form>
+  <form [formGroup]="cvForm">
+    <div class="section section-formation">
+      <h2>CV</h2>
+      
+  <form [formGroup]="experienceForm">
+    <div class="section section-formation">
+      <h2>experience</h2>
+      <label for="company">company:</label>
+      <input formControlName="company" type="text" id="company" name="company" placeholder="company ">
+      <label for="job">job:</label>
+      <input formControlName="job" type="text" id="job" name="job" placeholder=" Your job">
+      <label for="startDate">startDate:</label>
+      <input formControlName="startDate" type="text" id="startDate" name="startDate" placeholder=" Your startDate">
+      <label for="endDate">endDate:</label>
+      <input formControlName="endDate" type="text" id="endDate" name=" endDate" placeholder=" Your endDate">
+      <label for="description">description:</label>
+      <input formControlName="description" type="text" id="description" name="description" placeholder="Your description">
+    </div>
+  </form>
+  <button class="bouton-envoyer" (click)="addexperience()">Ajouter</button>
+  
+
+
+
+  <form [formGroup]="projectForm">
+    <div class="section section-formation">
+      <h2>Project</h2>
+      <label for="organisation">organisation:</label>
+      <input formControlName="organisation" type="text" id="organisation" name="organisation" placeholder="organisation ">
+      <label for="title">title:</label>
+      <input formControlName="title" type="text" id="title" name="title" placeholder=" Your title">
+      <label for="description">description:</label>
+      <input formControlName="description" type="text" id="description" name="description" placeholder=" Your description">
+      <label for="date">date:</label>
+      <input formControlName="date" type="text" id="date" name=" date" placeholder="  date">
+      
+    </div>
+  </form>
+  <button class="bouton-envoyer" (click)="addproject()">Ajouter</button>
+  
+
+
+  <form [formGroup]="skilsForm">
+    <div class="section section-formation">
+      <h2>skils</h2>
+      <label for="name">name:</label>
+      <input formControlName="name" type="text" id="name" name="name" placeholder="skils name ">
+      <label for="level">level:</label>
+      <input formControlName="level" type="text" id="level" name="level" placeholder=" Your level">
+     
+    </div>
+  </form>
+  <button class="bouton-envoyer" (click)="addskils()">Ajouter</button>
+ 
+
+
+  domain, date
+  <form [formGroup]="certificationForm">
+    <div class="section section-formation">
+      <h2>Certification</h2>
+      <label for="domain">domaine:</label>
+      <input formControlName="domain" type="text" id="domain" name="domain" placeholder=" Certification domain ">
+      <label for="date">date:</label>
+      <input formControlName="date" type="text" id="date" name="date" placeholder="  Certification date">
+     
+    </div>
+  </form>
+  <button class="bouton-envoyer" (click)="addcertification()">Ajouter</button>
+ 
+
+
+  <form [formGroup]="educationForm">
+    <div class="section section-formation">
+      <h2>Education</h2>
+      <label for="etablissement">etablissement:</label>
+      <input formControlName="etablissement" type="text" id="etablissement" name="etablissement" placeholder="etablissement ">
+      <label for="domaine">domaine:</label>
+      <input formControlName="domaine" type="text" id="domaine" name="domaine" placeholder=" domaine">
+      <label for="startDate">startDate:</label>
+      <input formControlName="startDate" type="text" id="startDate" name="startDate" placeholder=" startDate">
+      <label for="endDate">endDate:</label>
+      <input formControlName="endDate" type="text" id="endDate" name="endDate" placeholder=" endDate">
+     
+    </div>
+  </form>
+  <button class="bouton-envoyer" (click)="addeducation()">Ajouter</button>
+
+    
+    </div>
+  </form>
+  <button class="bouton-envoyer" (click)="addProfile()">Envoyer</button>
+
+
+
+
+
+
+
+</div>

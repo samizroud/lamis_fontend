@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <!-- DataTales Example -->
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary">les sujet </h6>
+    </div>
+    <div class="card-body">
+      <table>
+        <thead>
+          <tr>
+            <th>Titre</th>
+            <th>Description</th>
+            <th>Technologies</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let item of offres">
+            <td>{{item.title}}</td>
+
+            <td>{{item.description}}</td>
+            <td>
+              <p *ngFor="let tec of item.technologies">{{tec}}</p>
+            </td>
+            <td><a class="btn btn-primary" href="/stagiaires/profile"> postuler</a></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
+    </div>
+  </div>
+
+</div>

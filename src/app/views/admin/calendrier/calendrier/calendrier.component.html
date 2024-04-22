@@ -1,0 +1,44 @@
+<div class="container-fluid">
+
+    
+                
+  <!-- DataTales Example -->
+  <div class="card shadow mb-4">
+      <div class="card-header py-3">
+          <h6 class="m-0 font-weight-bold text-primary">calendrier</h6>
+      </div>
+      <div class="card-body">
+          
+          <div class="table-responsive">
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                      <tr>
+                          <th> les sujet</th>
+                          <th>stagiaires</th>
+                          
+                          <th>duree</th>
+                          <th>avancement</th>
+                          <th>status</th>
+                      </tr>
+                  </thead>
+                 
+                  <tbody>
+                      <tr *ngFor="let item    ">
+                        <td>{{item.lessujet}}</td>
+                        <td>{{item.stagiaires}}</td>
+                        <td>{{item.duree}}</td>
+                        <td>{{item.avancement}}</td>
+                        <td>
+                            <button class="btn btn-primary"> modifier</button>
+                           
+                        </td>
+                      </tr>
+                    
+                    
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+
+</div>
