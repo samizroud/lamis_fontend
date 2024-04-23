@@ -1,7 +1,7 @@
 <div class="container-fluid">
 
-    
-                
+
+
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
@@ -13,32 +13,37 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>Nom</th>
-                            <th>Prenom</th>
+                            <th>Full name</th>
+                            <th>Mobile</th>
                             <th>Privilège</th>
                             <th>status</th>
-                            
+                            <th>Actions</th>
+
 
                         </tr>
                     </thead>
-                    
+
                     <tbody>
-                        <tr *ngFor="let item    ">
-                            <td>{{item.Nom}}</td>
-                            
+                        <tr *ngFor="let item of  users  ">
+                            <td>{{item.fullName}}</td>
+
                             <td>
-                                {{item.Prenom}}
+                                {{item.phone}}
                             </td>
                             <td>
-                                {{item.Privilege}}
+                                {{item.role}}
+                            </td>
+                            <td>
+                                {{item.isEnabled?'Enable':'Non enable'}}
                             </td>
 
-                            <button class="btn btn-primary">modifier </button>
-                            <button class="btn btn-primary">supprimer</button>
-                        
+                            <td ><button class="btn btn-primary mr-2">modifier </button>
+                                <button class="btn btn-primary">supprimer</button>
+                            </td>
+
                         </tr>
-                      
-                      
+
+
                     </tbody>
                 </table>
             </div>

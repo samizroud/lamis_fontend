@@ -5,38 +5,70 @@
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">liste utilisateur</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Ajouter utilisateur</h6>
         </div>
         <div class="card-body">
-  
-  
-            <form >
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">username:</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
-               
-                  <div class="form-group">
-                    <label for="exampleFormControlInput1">Email:</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlInput1">role:</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlInput1">password:</label>
-                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlInput1">passwordConfirm:</label>
-                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                  </div>
-                  <button class="btn btn-primary">ajouter </button>
-                
-              </form>
+          <ng-container #container></ng-container>
             </div>
         </div>
     </div>
   
   
+<ng-template #addUser>
+  <form [formGroup]="addUserForm" >
+    <div class="form-group">
+      <label for="exampleFormControlInput1">username:</label>
+      <input type="text" class="form-control" formControlName="username" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+   
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email:</label>
+        <input type="email" class="form-control" formControlName="email" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">role:</label>
+        <input type="text" class="form-control"  formControlName="role"id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">password:</label>
+        <input type="text" class="form-control" formControlName="password" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">passwordConfirm:</label>
+        <input type="text" class="form-control" formControlName="passwordConfirm" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <button class="btn btn-primary" (click)="submit()">ajouter </button>
+    
+  </form>
+</ng-template>
+
+<ng-template  #addProfile>
+  <form [formGroup]="addProfileForm">
+    <div class="section section-informations-personnelles">
+      <h2>Informations personnelles</h2>
+      <label for="nom">FullName:</label>
+      <input formControlName="fullName" type="text" id="nom" name="nom" placeholder=" Your fullName">
+      <label for="pays">Nationality:</label>
+      <input formControlName="nationality" type="text" id="pays" name="pays" placeholder=" Your Nationality ">
+      <label for="date">Date of Birth:</label>
+      <input formControlName="dateOfBirth" type="date" id="date" name="date" placeholder=" Your date of birth">
+      <label for="adresse">Adresse:</label>
+      <input formControlName="address" type="text" id="adresse" name="adresse" placeholder="Your adresse">
+      <label for="dep">Departement:</label>
+      <input formControlName="department" type="text" id="dep" name="dep" placeholder="Your Departement">
+      <label for="dep">Gender:</label>
+      <input formControlName="gender" type="radio" id="contactChoice2" name="gender" value="male" />
+      <label for="contactChoice2">Male</label>
+      <input formControlName="gender" type="radio" id="contactChoice3" name="gender" value="femmale" />
+      <label for="contactChoice3">Femmale</label>
+    </div>
+    <div class="section section-contact">
+      <h2>Contact</h2>
+      <label for="email">Email:</label>
+      <input formControlName="email" type="email" id="email" name="email" placeholder="Your email">
+      <label for="telephone">Phone:</label>
+      <input formControlName="phone" type="tel" id="telephone" name="telephone" placeholder="Your number">
+    </div>
+    <button class="btn btn-primary" (click)="submitProfile()">ajouter </button>
+  </form>
+</ng-template>
