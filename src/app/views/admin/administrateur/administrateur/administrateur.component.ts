@@ -5,7 +5,7 @@ import { CandidatureService } from '../../../../services/candidature.service';
 @Component({
   selector: 'app-administrateur',
   templateUrl: './administrateur.component.html',
-  styleUrl: './administrateur.component.css'
+  styleUrls:[ './administrateur.component.css']
 })
 export class AdministrateurComponent implements OnInit  {
   public candidatures:any[]=[]

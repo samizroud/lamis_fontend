@@ -1,0 +1,42 @@
+<div class="container-fluid">
+
+    
+                
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">liste des taches non validées</h6>
+        </div>
+        <div class="card-body">
+  
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                      <tr>
+                        <th>tache</th>
+                        <th>status</th>
+                        
+                      </tr>
+                    </thead>
+                   
+                    <tbody>
+                      <tr *ngFor="let item  ">
+                        <td>{{item.tache}}</td>
+
+                        <td>  <button class="btn btn-accepter">Modifier </button>
+                            <button class="btn btn-rejeter">Supprimer</button>
+                        </td>
+                      </tr>
+                      
+                      
+                   
+                      
+                
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+  
+  </div>
+  

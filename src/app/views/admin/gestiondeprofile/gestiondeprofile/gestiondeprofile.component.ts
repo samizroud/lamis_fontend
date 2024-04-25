@@ -5,7 +5,7 @@ import { ProfileService } from '../../../../services/profile.service';
 @Component({
   selector: 'app-gestiondeprofile',
   templateUrl: './gestiondeprofile.component.html',
-  styleUrl: './gestiondeprofile.component.css'
+  styleUrls: ['./gestiondeprofile.component.css']
 })
 export class GestiondeprofileComponent implements OnInit {
   users:any[]=[]

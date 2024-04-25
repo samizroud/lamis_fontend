@@ -4,7 +4,7 @@ import { CandidatureService } from '../../../../services/candidature.service';
 @Component({
   selector: 'app-listestagiairesacceptees',
   templateUrl: './listestagiairesacceptees.component.html',
-  styleUrl: './listestagiairesacceptees.component.css'
+  styleUrls: ['./listestagiairesacceptees.component.css']
 })
 export class ListestagiairesaccepteesComponent  implements OnInit {
   listAccepted:any[]=[]

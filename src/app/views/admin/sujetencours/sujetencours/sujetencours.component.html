@@ -9,22 +9,22 @@
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                       <tr>
-                          <th>Intitulé</th>
-                          <th>stagiaire</th>
-                          <th>encadrant</th>
-                          <th>date debut</th>
-                          <th>date fin</th>
+                          <th>Sujet</th>
+                          <th>Stagiaire</th>
+                          <th>Encadrant</th>
+                          <th>Date debut</th>
+                          <th>Date fin</th>
                           <th>Action</th>
                       </tr>
                   </thead>
                  
                   <tbody>
                       <tr *ngFor="let item ">
-                          <td>{{item.firstname}}Tiger Nixon</td>
-                          <td>{{item.lastname}}System Architect</td>
-                          <td>{{item.age}}Edinburgh</td>
-                          <td>{{item.phone}}61</td>
-                          <td>{{item.email}}2011/04/25</td>
+                          <td>{{item.Sujet}}</td>
+                          <td>{{item.Stagiaire}}</td>
+                          <td>{{item.Encadrant}}</td>
+                          <td>{{item.Datedebut}}</td>
+                          <td>{{item.Datefin}}</td>
                           <td>
                               <button class="btn btn-primary">modifier </button>
                               <button class="btn btn-primary">decliner</button>

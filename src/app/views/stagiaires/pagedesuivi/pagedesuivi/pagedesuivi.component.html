@@ -5,31 +5,48 @@
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">page de suivi </h6>
+            <h6 class="m-0 font-weight-bold text-primary">Page de suivi</h6>
         </div>
         <div class="card-body">
-            
-
-
-
-    
+  
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
-                        <tr>
-                            
-                            <th>tache</th>
-                            <th>description</th>
-                            <th>titre</th>
-                            <th>status</th>
-                        </tr>
+                      <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Title</th>
+
+                        <th>status</th>
+                        
+                      </tr>
                     </thead>
+                   
+                    <tbody>
+                      <tr *ngFor="let item ">
+                        <td>{{item.Date}}</td>
+                        
+                        <td>{{item.Description}}</td>
+                        <td>{{item.Title}}</td>
+                      
+
+                        <td><input formControlName="gender" type="radio" id="contactChoice2" name="gender" value="Todo" />
+                            <label for="contactChoice2">Todo </label>
+                            <input formControlName="gender" type="radio" id="contactChoice3" name="gender" value="In Progress" />
+                            <label for="contactChoice3">In Progress</label>
+                            <input formControlName="gender" type="radio" id="contactChoice3" name="gender" value="Done" />
+                            <label for="contactChoice3">Done</label></td>
+                      </tr>
+                      
+                      
+                   
+                      
                 
-                    
+                    </tbody>
                 </table>
             </div>
-           
         </div>
     </div>
-
-</div>
+  
+  </div>
+  

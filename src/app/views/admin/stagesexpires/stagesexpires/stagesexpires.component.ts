@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-stagesexpires',
   templateUrl: './stagesexpires.component.html',
-  styleUrl: './stagesexpires.component.css'
+  styleUrls:[ './stagesexpires.component.css']
 })
-export class StagesexpiresComponent {
+export class StagesexpiresComponent implements OnInit{
+  constructor(){
 
+  }
+  ngOnInit(): void {
+    
+  }
+  
 }

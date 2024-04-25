@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-ajouter',
   templateUrl: './ajouter.component.html',
-  styleUrl: './ajouter.component.css',
+  styleUrls: ['./ajouter.component.css'],
   changeDetection: ChangeDetectionStrategy.Default
 })
 export class AjouterComponent implements OnInit,AfterViewInit {

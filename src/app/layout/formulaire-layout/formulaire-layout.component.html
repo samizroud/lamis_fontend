@@ -1,0 +1,260 @@
+<div style="text-align:center">
+    votre stage chez nous
+    <p>vous pouvez maintenant remplir ce formulaire .</p>
+  </div>
+  <title>Formulaire de candidature</title>
+  <div class="container">
+    <h1>Formulaire de candidature</h1>
+    <p>Veuillez remplir ce cv pour postuler à un stage.</p>
+    <hr>
+    <form [formGroup]="profileForm">
+      <div class="section section-informations-personnelles">
+        <h2>Informations personnelles</h2>
+        <label for="nom">FullName:</label>
+        <input formControlName="fullName" type="text" id="nom" name="nom" placeholder=" Your fullName">
+        <label for="pays">Nationality:</label>
+        <input formControlName="nationality" type="text" id="pays" name="pays" placeholder=" Your Nationality ">
+        <label for="date">Date of Birth:</label>
+        <input formControlName="dateOfBirth" type="date" id="date" name="date" placeholder=" Your date of birth">
+        <label for="adresse">Adresse:</label>
+        <input formControlName="address" type="text" id="adresse" name="adresse" placeholder="Your adresse">
+        <label for="dep">Departement:</label>
+        <input formControlName="department" type="text" id="dep" name="dep" placeholder="Your Departement">
+        <label for="dep">Gender:</label>
+        <input formControlName="gender" type="radio" id="contactChoice2" name="gender" value="male" />
+        <label for="contactChoice2">Male</label>
+        <input formControlName="gender" type="radio" id="contactChoice3" name="gender" value="femmale" />
+        <label for="contactChoice3">Femmale</label>
+      </div>
+      <div class="section section-contact">
+        <h2>Contact</h2>
+        <label for="email">Email:</label>
+        <input formControlName="email" type="email" id="email" name="email" placeholder="Your email">
+        <label for="telephone">Phone:</label>
+        <input formControlName="phone" type="tel" id="telephone" name="telephone" placeholder="Your number">
+      </div>
+    </form>
+  <form [formGroup]="cvForm">
+     <div class="section section-formation">
+        <h2>CV</h2>
+  
+   
+    
+  
+  <!-- Button pour ouvrir le popup -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#educationModal">
+     add education
+  </button>
+  
+  <!-- Modal pour afficher le formulaire -->
+  <div class="modal fade" id="educationModal" tabindex="-1" role="dialog" aria-labelledby="educationModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="educationModalLabel">Add Education</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Formulaire à afficher dans le popup -->
+          <form [formGroup]="educationForm">
+            <div class="section section-formation">
+              <h2>Education</h2>
+              <div class="form-group">
+                <label for="etablissement">Etablissement:</label>
+                <input formControlName="etablissement" type="text" id="etablissement" name="etablissement" class="form-control" placeholder="your Etablissement">
+              </div>
+              <div class="form-group">
+                <label for="domaine">Domaine:</label>
+                <input formControlName="domaine" type="text" id="domaine" name="domaine" class="form-control" placeholder="your domaine">
+              </div>
+              <div class="form-group">
+                <label for="startDate">startDate:</label>
+                <input formControlName="startDate" type="text" id="startDate" name="startDate" class="form-control" placeholder="startDate">
+              </div>
+              <div class="form-group">
+                <label for="endDate">endDate:</label>
+                <input formControlName="endDate" type="text" id="endDate" name="endDate" class="form-control" placeholder="endDate">
+              </div>
+             
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-primary"  (click)="addeducation()">Ajouter</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  
+  
+  <!-- Button pour ouvrir le popup -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#experienceModal">
+    add experience
+  </button>
+  
+  <!-- Modal pour afficher le formulaire -->
+  <div class="modal fade" id="experienceModal" tabindex="-1" role="dialog" aria-labelledby="experienceModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="experienceModalLabel">Ajouter une expérience</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body">
+         <!-- Formulaire à afficher dans le popup -->
+         <form [formGroup]="experienceForm">
+           <div class="section section-formation">
+             <h2>Expérience</h2>
+             <div class="form-group">
+               <label for="company">Company:</label>
+               <input formControlName="company" type="text" id="company" name="company" class="form-control" placeholder="Entreprise">
+             </div>
+             <div class="form-group">
+               <label for="job">Job:</label>
+               <input formControlName="job" type="text" id="job" name="job" class="form-control" placeholder="Poste">
+             </div>
+             <div class="form-group">
+               <label for="startDate">startDate:</label>
+               <input formControlName="startDate" type="text" id="startDate" name="startDate" class="form-control" placeholder="Date de début">
+             </div>
+             <div class="form-group">
+               <label for="endDate">Date de fin:</label>
+               <input formControlName="endDate" type="text" id="endDate" name="endDate" class="form-control" placeholder="Date de fin">
+             </div>
+             <div class="form-group">
+               <label for="description">endDate:</label>
+               <input formControlName="description" type="text" id="description" name="description" class="form-control" placeholder="Description">
+             </div>
+           </div>
+         </form>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+         <button type="button" class="btn btn-primary" (click)="addexperience()">Ajouter</button>
+       </div>
+     </div>
+   </div>
+  </div>
+  
+  
+  
+  
+   
+  
+  <!-- Button pour ouvrir le popup -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#skilsModal">
+    add skils
+  </button>
+  
+  <!-- Modal pour afficher le formulaire -->
+  <div class="modal fade" id="skilsModal" tabindex="-1" role="dialog" aria-labelledby="skilsModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="skilsModalLabel">add skils</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body">
+         <!-- Formulaire à afficher dans le popup -->
+         <form [formGroup]="skilsForm">
+           <div class="section section-formation">
+             <h2>skils</h2>
+             <div class="form-group">
+               <label for="name">name:</label>
+               <input formControlName="name" type="text" id="name" name="name" class="form-control" placeholder="your skils">
+             </div>
+             <div class="form-group">
+               <label for="level">level:</label>
+               <input formControlName="level" type="text" id="level" name="level" class="form-control" placeholder="your  level">
+             </div>
+            
+           </div>
+         </form>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+         <button type="button" class="btn btn-primary" (click)="addskils()">Ajouter</button>
+       </div>
+     </div>
+   </div>
+  </div>
+  
+  
+  
+   
+  
+  <!-- Button pour ouvrir le popup -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#projectModal">
+    add Project
+  </button>
+  
+  <!-- Modal pour afficher le formulaire -->
+  <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="projectModalLabel">Add Project</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body">
+         <!-- Formulaire à afficher dans le popup -->
+         <form [formGroup]="projectForm">
+           <div class="section section-formation">
+             <h2>Project</h2>
+             <div class="form-group">
+               <label for="organisation">Organisation:</label>
+               <input formControlName="organisation" type="text" id="organisation" name="organisation" class="form-control" placeholder="your Organisation">
+             </div>
+             <div class="form-group">
+               <label for="title">Title:</label>
+               <input formControlName="title" type="text" id="title" name="title" class="form-control" placeholder="The Title">
+             </div>
+             <div class="form-group">
+               <label for="description">description:</label>
+               <input formControlName="description" type="text" id="description" name="description" class="form-control" placeholder="description">
+             </div>
+             <div class="form-group">
+               <label for="date">date:</label>
+               <input formControlName="date" type="text" id="date" name="date" class="form-control" placeholder="date">
+             </div>
+            
+           </div>
+         </form>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+         <button type="button" class="btn btn-primary"  (click)="addproject()">Ajouter</button>
+       </div>
+     </div>
+   </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </form>
+  <button class="bouton-envoyer" (click)="addProfile()">Envoyer</button>
+  
+  
+  
+  
+  
+  
+  
+  </div>

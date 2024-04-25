@@ -5,7 +5,7 @@
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">les encadrants inscrits</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Les Encadrants Inscrits</h6>
         </div>
         <div class="card-body">
 
@@ -13,28 +13,28 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>nom</th>
-                            <th>prenom</th>
-                            <th>sujet</th>
-                            <th>telephone</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Sujet</th>
+                            <th>Telephone</th>
                             <th>Email</th>
-                            <th>Action</th>
+                            <th>Status</th>
 
                         </tr>
                     </thead>
                    
                     <tbody>
                         <tr *ngFor="let item ">
-                            <td>{{item.nom}}Tiger Nixon</td>
-                            <td>{{item.prenom}}System Architect</td>
-                            <td>{{item.sujet}}System Architect</td>
+                            <td>{{item.Nom}}</td>
+                            <td>{{item.Prenom}}</td>
+                            <td>{{item.Sujet}}</td>
 
-                            <td>{{item.telephone}}Edinburgh</td>
+                            <td>{{item.Telephone}}</td>
                             
-                            <td>{{item.email}}2011/04/25</td>
+                            <td>{{item.Email}}</td>
                             <td>
-                                <button class="btn btn-primary">accepter</button>
-                                <button class="btn btn-primary">supprimer</button>
+                                <button class="btn btn-primary">Accepter</button>
+                                <button class="btn btn-primary">Supprimer</button>
                             </td>
                         </tr>
                       

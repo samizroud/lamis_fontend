@@ -9,6 +9,7 @@ import { EncadrantLayoutComponent } from './encadrant-layout/encadrant-layout.co
 import { RegisterLayoutComponent } from './register-layout/register-layout.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AcceuilstagiairesLayoutComponent } from './acceuilstagiaires-layout/acceuilstagiaires-layout.component';
+import { FormulaireLayoutComponent } from './formulaire-layout/formulaire-layout.component';
 
 
 
@@ -21,8 +22,10 @@ import { AcceuilstagiairesLayoutComponent } from './acceuilstagiaires-layout/acc
     AssistantLayoutComponent,
     
     EncadrantLayoutComponent,
-          RegisterLayoutComponent,
-          AcceuilstagiairesLayoutComponent
+   RegisterLayoutComponent,   
+     AcceuilstagiairesLayoutComponent, FormulaireLayoutComponent, 
+   
+          
        
   ],
   imports: [

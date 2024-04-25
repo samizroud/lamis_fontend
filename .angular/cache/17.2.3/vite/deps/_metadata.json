@@ -1,55 +1,55 @@
 {
-  "hash": "798cca5d",
-  "configHash": "289ed07e",
+  "hash": "2e2b1db7",
+  "configHash": "2a3d7f31",
   "lockfileHash": "b25eef12",
-  "browserHash": "d80b3e2d",
+  "browserHash": "19a447ea",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "7a8c2488",
+      "fileHash": "4b0f7750",
       "needsInterop": false
     },
     "@angular/common/http": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
       "file": "@angular_common_http.js",
-      "fileHash": "3c660020",
+      "fileHash": "37f780e1",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "aa3a4864",
+      "fileHash": "03ed9322",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "a4b574ff",
+      "fileHash": "6f39097f",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "4f25dea3",
+      "fileHash": "93e9c22c",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "6eff71b9",
+      "fileHash": "7dd9b9e4",
       "needsInterop": false
     },
     "@auth0/angular-jwt": {
       "src": "../../../../../node_modules/@auth0/angular-jwt/fesm2020/auth0-angular-jwt.mjs",
       "file": "@auth0_angular-jwt.js",
-      "fileHash": "ae475211",
+      "fileHash": "a8deea6e",
       "needsInterop": false
     },
     "moment": {
       "src": "../../../../../node_modules/moment/moment.js",
       "file": "moment.js",
-      "fileHash": "00ae5e61",
+      "fileHash": "378de6b1",
       "needsInterop": true
     }
   },

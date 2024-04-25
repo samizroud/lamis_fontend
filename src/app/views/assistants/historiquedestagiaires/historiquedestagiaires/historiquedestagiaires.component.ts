@@ -4,7 +4,7 @@ import { OffreStageService } from '../../../../services/offre-stage.service';
 @Component({
   selector: 'app-historiquedestagiaires',
   templateUrl: './historiquedestagiaires.component.html',
-  styleUrl: './historiquedestagiaires.component.css'
+  styleUrls:[ './historiquedestagiaires.component.css']
 })
 export class HistoriquedestagiairesComponent implements OnInit {
   allStages:any[]=[]
